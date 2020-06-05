@@ -3,4 +3,4 @@ WORKDIR /blog
 COPY . /blog
 RUN mvn package
 
-CMD [ "sh", "-c", "mvn spring-boot:run -Dserver.port=8888 " ]
+CMD [ "sh", "-c", "mvn spring-boot:run -Dserver.port=8888" ]
