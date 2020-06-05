@@ -1,0 +1,44 @@
+name: build docker image release
+on:
+  push:
+    branches: HEAD
+    #tags:
+    #  - 'v*.*.*'
+jobs:
+  build:
+
+    runs-on: ubuntu-latest 
+    steps: 
+    
+    - name: 下载源码
+      uses: actions/checkout@v1
+    - name: 构建镜像并上传阿里云docker仓库
+       #${GITHUB_REF:11}
+      env: 
+         ALIYUN_DOCKER_NAME: 13797453467
+         NAME: freds_docker/blog
+         TAG: latest
+      run: |
+        docker login registry.cn-shenzhen.aliyuncs.com -u=$ALIYUN_DOCKER_NAME  -p ${{ secrets.DOCKERHUB_LOGIN_PASSWORD }}
+        docker build -t registry.cn-shenzhen.aliyuncs.com/$NAME:$TAG -f ./Dockerfile .
+        docker push registry.cn-shenzhen.aliyuncs.com/$NAME:$TAG
+    - name: 阿里云ECS部署docker 容器
+      env:
+        ALIYUN_DOCKER_NAME: 13797453467
+        DOCKER_NAME: blog
+        DOCKER_ID: $(docker ps -aq --filter name=blog)
+        NAME: freds_docker/blog
+        TAG: latest
+        HOST: 129.204.61.249
+        USER: root
+        CLEAR: $(docker images -f "dangling=true" -q)
+      run: |
+        sshpass -p ${{ secrets.ACTIONS_DEPLOY_KEY }} ssh  -o StrictHostKeyChecking=no  $USER@$HOST  << EOF
+        docker login registry.cn-shenzhen.aliyuncs.com -u=$ALIYUN_DOCKER_NAME  -p ${{ secrets.DOCKERHUB_LOGIN_PASSWORD }}
+        if [ $DOCKER_ID ]; then docker stop $DOCKER_ID ;fi
+        if [ $DOCKER_ID ]; then docker rm  $DOCKER_ID ;fi
+        docker pull registry.cn-shenzhen.aliyuncs.com/$NAME:$TAG
+        docker rmi $CLEAR
+        docker run  --restart=always --name=$DOCKER_NAME -d  -p 8888:8888 registry.cn-shenzhen.aliyuncs.com/$NAME:$TAG
+        exit
+        EOF
