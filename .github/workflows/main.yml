@@ -1,7 +1,7 @@
 name: build docker image release
 on:
   push:
-    branches: HEAD
+    branches: master
     #tags:
     #  - 'v*.*.*'
 jobs:
