@@ -38,5 +38,5 @@
 1. **项目目前还在开发中，以后也会一直维护下去。**
 2. 项目的开发过程中，参考了很多大佬经验，由于年代久远，未能记住各位大佬的链接地址。如大佬有看到该项目，请与我联系：`bianxiaofeng@sohu.com`，以便及时表示感谢。
 #### 参与贡献
-基于DimpleFeng/DimpleBlog(http://www.bianxiaofeng.com/)修改
+基于[DimpleFeng/DimpleBlog](http://www.bianxiaofeng.com/)修改
 
