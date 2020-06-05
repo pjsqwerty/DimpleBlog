@@ -1,11 +1,7 @@
 
 # DimpleBlog
 #### 介绍
-`Dimple Blog`是基于SpringBoot2搭建的个人博客系统.
-目前master分支的是基于SpringBoot2和Vue的前后端分离版本.`thymeleaf-version`是基于SpringBoot2的一体机代码.建议不熟悉Vue的可以切到这个版本使用.
-### 体验链接地址
-[边小丰的个人博客](http://www.bianxiaofeng.com/)
-管理员账号：`test` ,管理员密码： `123456`
+基于SpringBoot2和Vue的前后端分离版本.
 ### 图片展示
 #### 前台
 ![lrRqBD.png](https://s2.ax1x.com/2020/01/06/lrRqBD.png)
@@ -42,8 +38,5 @@
 1. **项目目前还在开发中，以后也会一直维护下去。**
 2. 项目的开发过程中，参考了很多大佬经验，由于年代久远，未能记住各位大佬的链接地址。如大佬有看到该项目，请与我联系：`bianxiaofeng@sohu.com`，以便及时表示感谢。
 #### 参与贡献
+基于DimpleFeng/DimpleBlog(http://www.bianxiaofeng.com/)修改
 
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
