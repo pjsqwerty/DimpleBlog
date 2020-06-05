@@ -59,7 +59,7 @@ token:
 # 项目相关配置
 dimple:
   # 名称
-  name: DimpleBlog
+  name: blog
   # 版本
   version: 2.0.0
   # 版权年份

@@ -72,11 +72,9 @@ public class SwaggerConfig {
         // 用ApiInfoBuilder进行定制
         return new ApiInfoBuilder()
                 // 设置标题
-                .title("标题：DimpleBlog后台管理系统")
-                // 描述
-                .description("代码开源:https://github.com/DimpleFeng/DimpleBlog")
+                .title("标题：blog后台管理系统")
                 // 作者信息
-                .contact(new Contact(dimpleBlogConfig.getName(), "https://www.bianxiaofeng.com", "bianxiaofeng@sohu.com"))
+                .contact(new Contact(dimpleBlogConfig.getName(), "https://blog.asfred.com", "2416962387@qq.com"))
                 // 版本
                 .version("版本号:" + dimpleBlogConfig.getVersion())
                 .build();
