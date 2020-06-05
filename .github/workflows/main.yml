@@ -7,14 +7,14 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest 
-    steps: 
-    
+    runs-on: ubuntu-latest
+    steps:
+
     - name: 下载源码
       uses: actions/checkout@v1
     - name: 构建镜像并上传阿里云docker仓库
        #${GITHUB_REF:11}
-      env: 
+      env:
          ALIYUN_DOCKER_NAME: 13797453467
          NAME: freds_docker/blog
          TAG: latest
