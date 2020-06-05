@@ -9,8 +9,7 @@
     <packaging>jar</packaging>
 
     <name>blog</name>
-    <url>http://www.bianxiaofeng.com</url>
-    <description>blog</description>
+    <description>博客</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
