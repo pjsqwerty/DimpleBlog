@@ -1,7 +1,7 @@
 #FROM maven:3-jdk-8-alpine
 
 #运行此项目基于openjdk镜像
-FROM java:8
+FROM myimage/alpine_glibc_jdk:8
 WORKDIR /blog
 COPY . /blog
 RUN mvn package
