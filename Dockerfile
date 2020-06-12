@@ -8,7 +8,7 @@
 
 #CMD [ "sh", "-c", "mvn spring-boot:run -Dserver.port=8888" ]
 # First stage - Compiling application
-FROM registry.cn-hangzhou.aliyuncs.com/acs/maven:3-jdk-8
+FROM maven:3-jdk-8-alpine
 WORKDIR /blog
 COPY . /blog
 RUN mvn package
