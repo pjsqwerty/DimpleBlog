@@ -27,7 +27,7 @@ import java.util.List;
  * @date: 10/22/19
  */
 @RestController
-@RequestMapping("/system/dict/data")
+@RequestMapping("/dev-api/system/dict/data")
 public class DictDataController extends BaseController {
 
     private final DictDataService dictDataService;
