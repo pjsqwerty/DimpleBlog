@@ -1,7 +1,7 @@
 #FROM maven:3-jdk-8-alpine
 
 #运行此项目镜像(带字体)
-FROM new/maven:3-jdk-8-alpine
+FROM registry.cn-shenzhen.aliyuncs.com/freds_docker/images:latest
 WORKDIR /blog
 COPY . /blog
 RUN mvn package
