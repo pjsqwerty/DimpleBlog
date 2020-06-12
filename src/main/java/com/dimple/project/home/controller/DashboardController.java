@@ -20,7 +20,7 @@ import java.util.Map;
  * @date: 12/20/19
  */
 @RestController
-@RequestMapping("/dashboard")
+@RequestMapping("/dev-api/dashboard")
 public class DashboardController extends BaseController {
 
     final DashboardService dashboardService;

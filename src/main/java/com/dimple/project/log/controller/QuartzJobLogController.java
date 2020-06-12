@@ -21,7 +21,7 @@ import java.util.List;
  * @date: 11/08/19
  */
 @RestController
-@RequestMapping("/log/quartzLog")
+@RequestMapping("/dev-api/log/quartzLog")
 public class QuartzJobLogController extends BaseController {
 
     final QuartzJobLogService quartzJobLogService;

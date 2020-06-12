@@ -21,7 +21,7 @@ import java.util.List;
  * @date: 10/22/19
  */
 @RestController
-@RequestMapping("/log/visitLog")
+@RequestMapping("/dev-api/log/visitLog")
 public class VisitLogController extends BaseController {
     private final VisitLogService visitLogService;
 

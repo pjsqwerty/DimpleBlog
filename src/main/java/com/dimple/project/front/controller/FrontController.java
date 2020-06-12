@@ -36,7 +36,7 @@ import java.util.Map;
  * @date: 2020/1/1
  */
 @RestController
-@RequestMapping("f")
+@RequestMapping("/dev-api/f")
 public class FrontController extends BaseController {
     private static final String QQ_QUERY_URL = "https://r.qzone.qq.com/fcg-bin/cgi_get_portrait.fcg";
 

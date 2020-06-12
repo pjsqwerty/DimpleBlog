@@ -31,7 +31,7 @@ import java.util.List;
  * @date: 11/06/19
  */
 @RestController
-@RequestMapping("/tool/qiNiu")
+@RequestMapping("/dev-api/tool/qiNiu")
 public class QiNiuController extends BaseController {
 
     @Autowired

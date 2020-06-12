@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date: 10/22/19
  */
 @RestController
-@RequestMapping("/monitor/server")
+@RequestMapping("/dev-api/monitor/server")
 public class ServerController extends BaseController {
     @Autowired
     private ServerService serverService;

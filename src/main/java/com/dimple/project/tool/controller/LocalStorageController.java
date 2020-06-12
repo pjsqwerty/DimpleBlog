@@ -29,7 +29,7 @@ import java.util.List;
  * @date: 11/07/19
  */
 @RestController
-@RequestMapping("/tool/localStorage")
+@RequestMapping("/dev-api/tool/localStorage")
 public class LocalStorageController extends BaseController {
     @Autowired
     LocalStorageService localStorageService;

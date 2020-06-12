@@ -28,7 +28,7 @@ import java.util.List;
  * @date: 2019-10-28
  */
 @RestController
-@RequestMapping("/blog/category")
+@RequestMapping("/dev-api/blog/category")
 public class CategoryController extends BaseController {
 
     private final CategoryService categoryService;

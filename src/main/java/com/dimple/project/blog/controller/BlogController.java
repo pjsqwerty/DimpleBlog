@@ -27,7 +27,7 @@ import java.util.List;
  * @date: 2019-10-28
  */
 @RestController
-@RequestMapping("/blog/blog")
+@RequestMapping("/dev-api/blog/blog")
 public class BlogController extends BaseController {
 
     private final BlogService blogService;

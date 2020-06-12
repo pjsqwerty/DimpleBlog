@@ -26,7 +26,7 @@ import java.util.List;
  * @date: 11/07/19
  */
 @RestController
-@RequestMapping("/tool/quartz")
+@RequestMapping("/dev-api/dev-api/tool/quartz")
 public class QuartzJobController extends BaseController {
 
     @Autowired

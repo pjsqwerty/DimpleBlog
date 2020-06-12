@@ -28,7 +28,7 @@ import java.util.List;
  * @date: 2019/10/26
  */
 @RestController
-@RequestMapping("/blog/comment")
+@RequestMapping("/dev-api/blog/comment")
 public class CommentController extends BaseController {
 
     private final CommentService commentService;

@@ -22,7 +22,7 @@ import java.util.List;
  * @date: 10/22/19
  */
 @RestController
-@RequestMapping("/log/loginLog")
+@RequestMapping("/dev-api/log/loginLog")
 public class LoginLogController extends BaseController {
     private final LoginLogService loginLogService;
 

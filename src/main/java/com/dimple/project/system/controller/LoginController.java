@@ -12,6 +12,7 @@ import com.dimple.project.system.domain.SysUser;
 import com.dimple.project.system.service.MenuService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -24,6 +25,7 @@ import java.util.Set;
  * @date: 10/22/19
  */
 @RestController
+@RequestMapping("/dev-api")
 public class LoginController {
     private final SysLoginService loginService;
 

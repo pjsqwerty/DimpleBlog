@@ -29,7 +29,7 @@ import java.util.List;
  * @date: 10/24/19
  */
 @RestController()
-@RequestMapping("monitor/blacklist")
+@RequestMapping("/dev-api/monitor/blacklist")
 public class BlacklistController extends BaseController {
     final BlacklistService blacklistService;
 

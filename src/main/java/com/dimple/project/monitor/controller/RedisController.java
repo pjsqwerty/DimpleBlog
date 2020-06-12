@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
  * @date: 11/6/19
  */
 @RestController
-@RequestMapping("/monitor/redis")
+@RequestMapping("/dev-api/monitor/redis")
 public class RedisController {
     final RedisCacheService redisCacheService;
 

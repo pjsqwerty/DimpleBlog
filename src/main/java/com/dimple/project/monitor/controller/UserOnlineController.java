@@ -30,7 +30,7 @@ import java.util.List;
  * @date: 10/22/19
  */
 @RestController
-@RequestMapping("/monitor/online")
+@RequestMapping("/dev-api/monitor/online")
 public class UserOnlineController extends BaseController {
     private final UserOnlineService userOnlineService;
 

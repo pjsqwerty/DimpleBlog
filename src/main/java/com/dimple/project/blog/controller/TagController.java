@@ -27,7 +27,7 @@ import java.util.List;
  * @date: 11/22/19
  */
 @RestController
-@RequestMapping("blog/tag")
+@RequestMapping("/dev-api/blog/tag")
 public class TagController extends BaseController {
 
     final TagService tagService;
