@@ -110,14 +110,7 @@
 
     <delete id="deleteTagMapping">
         delete from tag_mapping
-        <choose>
-            <when test="blogId==null and tagId==null and bookId==null and noteId==null">
-                where 1=2
-            </when>
-            <otherwise>
-                where 1=1
-            </otherwise>
-        </choose>
+         where 1=1
         <if test="blogId != null">
             AND blog_id =#{blogId}
         </if>
