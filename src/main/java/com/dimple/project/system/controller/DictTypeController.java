@@ -29,7 +29,7 @@ import java.util.List;
  * @date: 10/22/19
  */
 @RestController
-@RequestMapping("/system/dict/type")
+@RequestMapping("/dev-api/system/dict/type")
 public class DictTypeController extends BaseController {
     private final DictTypeService dictTypeService;
 
