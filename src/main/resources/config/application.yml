@@ -18,7 +18,7 @@ swagger:
   # 是否开启swagger
   enabled: true
   # 请求前缀
-  pathMapping: /dev-api
+  pathMapping: /prod-api
 
 # 日志配置
 logging:
@@ -33,7 +33,7 @@ spring:
     # 国际化资源文件路径
     basename: i18n/messages
   profiles:
-    active: dev
+    active: prod
   # 文件上传
   servlet:
     multipart:

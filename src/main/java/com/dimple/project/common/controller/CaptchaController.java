@@ -5,6 +5,7 @@ import com.dimple.common.utils.IdUtils;
 import com.dimple.common.utils.VerifyCodeUtils;
 import com.dimple.common.utils.sign.Base64;
 import com.dimple.framework.redis.RedisCacheService;
+import com.dimple.framework.web.controller.BaseController;
 import com.dimple.framework.web.domain.AjaxResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,7 +24,7 @@ import java.util.concurrent.TimeUnit;
  */
 @RestController
 @Slf4j
-public class CaptchaController {
+public class CaptchaController extends BaseController {
 
     final RedisCacheService redisCacheService;
 

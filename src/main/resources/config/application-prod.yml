@@ -59,11 +59,11 @@ token:
 # 项目相关配置
 dimple:
   # 名称
-  name: DimpleBlog
+  name: blog
   # 版本
   version: 2.0.0
   # 版权年份
-  copyrightYear: 2019
+  copyrightYear: 2020
   # 文件路径 示例（Linux配置 /home/dimple/uploadPath）
   profile: /home/dimple/dimpleBlog/file/
   # 获取ip地址开关

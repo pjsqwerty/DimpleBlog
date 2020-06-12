@@ -3,6 +3,7 @@ package com.dimple.common.utils.security;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 
+import com.dimple.common.utils.SecurityUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,10 @@ import org.slf4j.LoggerFactory;
  */
 @Slf4j
 public class Md5Utils {
+    public static void main(String[] args) {
+        String s = SecurityUtils.encryptPassword("123456");
+        System.out.println(s);
+    }
     private Md5Utils() {
     }
 
