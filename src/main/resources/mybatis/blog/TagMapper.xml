@@ -65,14 +65,14 @@
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="title != null  and title != ''">title,</if>
             <if test="color != null  and color != ''">color,</if>
-            <if test="type != null">type,</if>
+          <!--  <if test="type != null">type,</if>-->
             <if test="createBy != null  and createBy != ''">create_by,</if>
             create_time
         </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
             <if test="title != null  and title != ''">#{title},</if>
             <if test="color != null  and color != ''">#{color},</if>
-            <if test="type != null">#{type},</if>
+            <!--<if test="type != null">#{type},</if>-->
             <if test="createBy != null  and createBy != ''">#{createBy},</if>
             sysdate()
         </trim>
