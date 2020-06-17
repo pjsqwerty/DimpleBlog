@@ -28,7 +28,7 @@ import java.util.List;
  * @date: 10/22/19
  */
 @RestController
-@RequestMapping("system/carousel")
+@RequestMapping("/dev-api/system/carousel")
 public class CarouselController extends BaseController {
 
     final CarouselService carouselService;
