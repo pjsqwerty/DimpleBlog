@@ -10,8 +10,8 @@ import java.io.Serializable;
 /**
  * @className: Notice
  * @description: 通知公告表 sys_notice
- * @author: Dimple
- * @date: 10/22/19
+ * @author: Fred
+ * @date: 06/18/20
  */
 @Data
 //序列化Json的时候,如果是Null则忽略
@@ -44,9 +44,9 @@ public class Notice extends BaseEntity implements Serializable {
     private String htmlContent;
 
     /**
-     * 公告状态（true正常 false关闭）
+     * 公告状态（0正常 1关闭）
      */
-    private Boolean status;
+    private String status;
 
     public Long getId() {
         return id;
@@ -88,11 +88,11 @@ public class Notice extends BaseEntity implements Serializable {
         this.htmlContent = htmlContent;
     }
 
-    public Boolean getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(Boolean status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 }
