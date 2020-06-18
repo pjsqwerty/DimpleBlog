@@ -29,7 +29,7 @@ import java.util.List;
  * @date: 10/22/19
  */
 @RestController
-@RequestMapping("/system/user")
+@RequestMapping("/dev-api/system/user")
 public class UserController extends BaseController {
     private final UserService userService;
 

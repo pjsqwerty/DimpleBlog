@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date: 10/22/19
  */
 @RestController
-@RequestMapping("/system/user/profile")
+@RequestMapping("/dev-api/system/user/profile")
 public class ProfileController extends BaseController {
     private final UserService userService;
 

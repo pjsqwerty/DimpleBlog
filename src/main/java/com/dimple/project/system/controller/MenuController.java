@@ -29,7 +29,7 @@ import java.util.List;
  * @date: 10/22/19
  */
 @RestController
-@RequestMapping("/system/menu")
+@RequestMapping("/dev-api/system/menu")
 public class MenuController extends BaseController {
     private final MenuService menuService;
 

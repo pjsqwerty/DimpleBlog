@@ -27,7 +27,7 @@ import java.util.List;
  * @date: 10/22/19
  */
 @RestController
-@RequestMapping("/system/notice")
+@RequestMapping("/dev-api/system/notice")
 public class NoticeController extends BaseController {
     private final NoticeService noticeService;
 

@@ -29,7 +29,7 @@ import java.util.List;
  * @date: 2019-10-29
  */
 @RestController
-@RequestMapping("/system/link")
+@RequestMapping("/dev-api/system/link")
 public class LinkController extends BaseController {
 
     private final LinkService linkService;

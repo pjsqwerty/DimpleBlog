@@ -28,7 +28,7 @@ import java.util.List;
  * @date: 10/22/19
  */
 @RestController
-@RequestMapping("/system/role")
+@RequestMapping("/dev-api/system/role")
 public class RoleController extends BaseController {
     private final RoleService roleService;
 

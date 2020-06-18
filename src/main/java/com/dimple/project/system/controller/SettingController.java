@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date: 01/08/20
  */
 @RestController
-@RequestMapping("system/setting")
+@RequestMapping("/dev-api/system/setting")
 public class SettingController extends BaseController {
     @Autowired
     ConfigService configService;
