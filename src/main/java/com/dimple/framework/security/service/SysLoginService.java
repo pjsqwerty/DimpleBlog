@@ -47,13 +47,13 @@ public class SysLoginService {
      */
     public String login(String username, String password, String code, String uuid) {
         String verifyKey = Constants.CAPTCHA_CODE_KEY + uuid;
-        String captcha = redisCacheService.getCacheObject(verifyKey);
+        //String captcha = redisCacheService.getCacheObject(verifyKey);
         redisCacheService.deleteObject(verifyKey);
-        if (captcha == null) {
+/*        if (captcha == null) {
             AsyncManager.me().execute(AsyncFactory.recordLoginLog(username, Constants.FAILED, MessageUtils.message("user.captcha.error")));
             throw new CaptchaExpireException();
         }
-        /*if (!code.equalsIgnoreCase(captcha)) {
+        if (!code.equalsIgnoreCase(captcha)) {
             AsyncManager.me().execute(AsyncFactory.recordLoginLog(username, Constants.FAILED, MessageUtils.message("user.captcha.expire")));
             throw new CaptchaException();
         }*/
