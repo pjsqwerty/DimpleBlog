@@ -53,10 +53,10 @@ public class SysLoginService {
             AsyncManager.me().execute(AsyncFactory.recordLoginLog(username, Constants.FAILED, MessageUtils.message("user.captcha.error")));
             throw new CaptchaExpireException();
         }
-        if (!code.equalsIgnoreCase(captcha)) {
+        /*if (!code.equalsIgnoreCase(captcha)) {
             AsyncManager.me().execute(AsyncFactory.recordLoginLog(username, Constants.FAILED, MessageUtils.message("user.captcha.expire")));
             throw new CaptchaException();
-        }
+        }*/
         // 用户验证
         Authentication authentication = null;
         try {
